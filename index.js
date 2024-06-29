@@ -93,20 +93,6 @@ app.get('/weathersubmit',(req,res) =>{
     res.render("weather");
   });
   
-// app.get('/football',(req,res)=>{
-//     const name=req.query.name;
-//     var datainfo=[];
-//     request.get({
-//         url:'https://api.weatherapi.com/v1/forecast.json?key=1d38e74f95ff438e84b64154220306&q=bhimavaram&days=7'+name,},
-//         function(error,response,body)
-//         {
-//             const data=JSON.parse(body)
-//             var a=data[0].name;
-//             datainfo.push(a);
-
-//         }
-//     )
-// })
 
 app.listen(port, ()=>{
     console.log(`listening on port ${port}`);
